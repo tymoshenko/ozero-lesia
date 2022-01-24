@@ -1,6 +1,86 @@
-body {
+/*body {
 	background-color: powderblue;
 }
 h1 {
 	color: blue;
+}
+*/
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+img {
+	width:100%; 
+	border: 0.5rem solid hsl(0, 0%, 95%); 
+	color: hsl(0, 0%, 95%);
+	max-width: 100%;
+}
+
+p {
+	background-color: hsl(0, 0%, 95%);
+	padding: 0.5rem;
+}
+
+/* Header/Blog Title */
+.header {
+  padding-top: 0.1rem;
+  padding-bottom: 0.2rem;
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: blue 1px 0 222px;
+  color: lightblue;
+  background: powderblue;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 20%;
+  padding-left: 2%;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: hsl(0, 0%, 95%);
+  width: 100%;
+  padding: 0.2rem;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
 }
